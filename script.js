@@ -6,6 +6,15 @@ const height = window.innerHeight * 0.8;
 canvas.width = width;
 canvas.height = height;
 
+/**
+ * Recursively draws a fractal tree branch structure on the canvas.
+ * 
+ * @param {number} x - The starting x-coordinate of the branch.
+ * @param {number} y - The starting y-coordinate of the branch.
+ * @param {number} angle - The angle (in radians) at which the branch is drawn.
+ * @param {number} length - The length of the current branch.
+ * @param {number} branchWidth - The width of the current branch.
+ */
 function drawTree(x, y, angle, length, branchWidth) {
     if (length < 5) {
         return;
